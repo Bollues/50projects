@@ -1,0 +1,80 @@
+.nav{
+  position: fixed;
+  width: 100%;
+  background-color: #222;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active{
+  background-color: #fff;
+}
+
+.nav.active .container{
+  padding: 0.3em 0;
+}
+
+.nav.active .container a{
+  color: #222;
+}
+
+.nav.active .container h1{
+  color: #222;
+}
+
+.container{
+  display: flex;
+  max-width: 72em;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+  padding: 0.5em 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.container h1{
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-items{
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.nav-left{
+  display: flex;
+}
+
+.nav-right{
+  display: flex;
+}
+
+.nav-items li{
+  padding: 7px 15px;  
+}
+.nav-items li a{
+  transition: all 0.3s ease;
+}
+
+.nav-items li:hover a{
+  color: coral; 
+}
+
+.logo{
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.content{
+  height: 120vh;
+  background-color: #ccc;
+}
+

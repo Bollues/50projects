@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import '../reset.css';
+
+
+.increment-counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #8e44ad;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.increment-counter-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 50px;
+}
+
+.increment-counter-container i{
+  color: white;
+}
+
+.increment-counter-count{
+  font-size: 60px;
+  margin-top: 10px;
+  color: white;
+}
+
+.increment-counter-container span{
+  color: white;
+}

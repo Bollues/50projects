@@ -1,0 +1,59 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(162, 88, 172);
+}
+
+.click-menu-container {
+  position: absolute;
+  background: white;
+  width: 152px;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity .3s ease, visibility .3s ease, height  0.2s ease;
+}
+
+.click-menu-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.click-menu-list {
+  list-style: none;
+}
+
+
+.click-menu-list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+span {
+  display: inline-block;
+  transform: translateX(65%)
+}
+
+.click-menu-list-item:hover {
+  background: rgb(214, 214, 214);
+}
+
+.click-menu-list-item-divider {
+  margin: 4px 8px;
+  height: 1px;
+  background: rgb(236, 236, 236);
+}
+
+.click-menu-list-item-icon {
+  margin-left: 8px;
+  margin-right: 8px;
+}

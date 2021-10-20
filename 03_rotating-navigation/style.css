@@ -1,0 +1,107 @@
+@import "../reset.css";
+@font-face {
+  font-family: Lato;
+  src: url("./Lato-Light.ttf");
+}
+
+body{
+  background-color: #222;
+  overflow-x: hidden;
+}
+
+.container{
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+}
+
+.container.shownav{
+  transform: rotate(-20deg);
+}
+
+.content-controler{
+  position: fixed;
+  left: -100px;
+  top: -100px;
+}
+
+.content-controler-circle{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: coral;
+  transition: transform linear 0.5s;
+}
+
+.container.shownav .content-controler-circle{
+  transform: rotate(-70deg);
+}
+
+.content-controler-circle button{
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  height: 100px;
+  background: transparent;
+  font-size: 28px;
+  color: white;
+}
+
+.content-controler-circle .content-controler-open{
+  left: 60%;
+}
+
+.content-controler-circle .content-controler-close{
+  top: 60%;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+
+.content{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.container.shownav + nav ul li{
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+nav{
+  font-family: Lato;
+  position: fixed;
+  bottom: 40px;
+  left: 0px;
+}
+
+nav ul{
+  margin: 16px 0px;
+  padding-left: 30px;
+}
+
+nav ul li{
+  margin: 40px 0px;
+  font-size: 17px;
+  color: white;
+  transform: translateX(-100%);
+  transition: transform ease-in 0.4s;
+}
+
+nav ul li + li{
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li{
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+
+
+nav ul li i{
+  font-size: 18px;
+  margin-right: 10px;
+}

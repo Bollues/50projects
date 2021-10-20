@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Muli;
+  src: url("./Mulish-Medium.ttf");
+}
+
+.container {
+  display: flex;
+  width: 60vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 52vh;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  margin: 10px;
+  transition: all 0.7s ease;
+}
+
+.panel h3{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-family: Muli;
+  color: white;
+  opacity: 0;
+}
+
+.panel.active{
+  flex-grow: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+

@@ -1,0 +1,93 @@
+@import "../reset.css";
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+  background: #f0f0f0;
+  font-family: 'Muli', sans-serif;
+}
+
+.dataDisplay-faq-collapse{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dataDisplay-faq-collapse h1{
+  text-align: center;
+  margin: 50px 0px 30px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.faq-collapse{
+  margin: 20px 0;
+  padding: 30px;
+  background: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.faq-collapse h3{
+  margin: 0px 35px 0px 0px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.faq-collapse p{
+  display: none;
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+.faq-collapse button{
+  position: absolute;
+  right: 30px;
+  top: 27px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.faq-collapse .fa-times{
+  display: none;
+}
+
+.faq-collapse .fa-chevron-down{
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.faq-collapse .fa-chevron-down:hover{
+  color: rgb(90, 151, 153);
+}
+
+.faq-collapse.active{
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-collapse.active p{
+  display: block;
+}
+
+.faq-collapse.active .fa-chevron-down{
+  display: none;
+}
+
+.faq-collapse.active button{
+  background-color: #9fa4a8;
+}
+
+.faq-collapse.active button:hover{
+  background-color: #252729;
+}
+
+.faq-collapse.active .fa-times{
+  font-size: 16px;
+  display: block;
+  color: white;
+}

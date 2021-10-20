@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "../reset.css";
+
+
+.ui-banners-split-landing{
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #333;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 28%;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #fff;
+  white-space: nowrap;
+}
+
+button{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 15rem;
+  padding: 1.5rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.split-landing-left,
+.split-landing-right{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 0.5;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.split-landing-left{
+  background-image: url("./ps.jpg");
+  left: 0;
+}
+
+.split-landing-left::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(87, 84, 236, 0.7);
+}
+
+.split-landing-right{
+  background-image: url("./xbox.jpg");
+  right: 0;
+}
+
+.split-landing-right::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.ui-banners-split-landing.left .split-landing-left{
+  flex-grow: 1.5;
+}
+
+.ui-banners-split-landing.left .split-landing-left button:hover{
+  background-color: rgba(87, 84, 236, 1);
+}
+
+.ui-banners-split-landing.right .split-landing-right{
+  flex-grow: 1.5;
+}
+
+.ui-banners-split-landing.right .split-landing-right button:hover{
+  background-color: rgba(28, 122, 28, 1);
+}
+

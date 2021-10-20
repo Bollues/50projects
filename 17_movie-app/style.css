@@ -1,0 +1,111 @@
+@import '../reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.async-movie-app{
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #22254b;
+  font-family: 'Poppins', sans-serif;
+}
+
+.async-movie-app header{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #373b69;
+  padding: 1rem;
+}
+
+
+#movie-app-form input{
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+#movie-app-form input::-webkit-input-placeholder{
+  color: rgb(133, 134, 201);
+}
+
+#movie-app-form input:focus{
+  outline: 0;
+}
+
+#movie-app-main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie-app-block{
+  width: 300px;
+  margin: 1rem;
+  background-color: #373b69;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 20%);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.movie-app-block img{
+  width: 100%;
+}
+
+.movie-app-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+  color: #eee;
+}
+
+.movie-app-info h3{
+  margin-bottom: 18px;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.movie-app-info span{
+  background-color: #22254b;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.movie-app-info span.movie-avgVote-green{
+  color: lightgreen;
+}
+
+.movie-app-info span.movie-avgVote-orange{
+  color: orange;
+}
+
+.movie-app-info span.movie-avgVote-red{
+  color: red;
+}
+
+.movie-app-overview{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  background-color: #fff;
+  padding: 2rem;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  transition: all 0.4s ease;
+}
+
+.movie-app-overview h3{
+  margin: 18px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.movie-app-block:hover .movie-app-overview{
+  transform: translateY(0%);
+}

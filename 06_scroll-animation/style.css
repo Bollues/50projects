@@ -1,0 +1,39 @@
+@import '../reset.css';
+
+.animation-lazy-load{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+.animation-lazy-load h1{
+  font-size: 2em;
+  margin: 10px;
+}
+
+.animation-lazy-load div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: steelblue;
+  border-radius: 10px;
+  margin: 10px;
+  color: #fff;
+  font-size: 2.5em;
+  box-shadow: 2px 2px 4px rgba(0 0 0 / 30%);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.animation-lazy-load div:nth-child(even){
+  transform: translateX(-400%);
+}
+
+.animation-lazy-load div.active{
+  transform: translateX(0);
+}
+

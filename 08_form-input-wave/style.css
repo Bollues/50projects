@@ -1,0 +1,96 @@
+@import "../reset.css";
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Muli', sans-serif;
+  background-color: steelblue;
+}
+
+.login-container{
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.login-container h1{
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.login-control{
+  position: relative;
+  margin: 20px 0px 40px;
+}
+
+.login-control label{
+  position: absolute;
+  left: 0;
+  top: 15px;
+  color: white;
+}
+
+.login-control input{
+  background: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  padding: 15px 0px;
+  width: 100%;
+}
+
+.login-control input:focus,
+.login-control input:valid{
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.login-container button{
+  width: 100%;
+  background-color: lightblue;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container button:active{
+  transform: scale(0.98);
+}
+
+.login-container p{
+  width: 100%;
+  margin: 30px 0px 16px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.login-container a{
+  text-decoration: none;
+  color: lightblue;
+}
+
+.login-container a:visited{
+  color: lightblue;
+}
+
+.login-control label span{
+  display: inline-block;
+  font-size: 18px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.login-control input:focus + label span,
+.login-control input:valid + label span{
+  color: lightblue;
+  transform: translateY(-30px);
+}
